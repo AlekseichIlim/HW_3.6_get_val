@@ -1,2 +1,8 @@
-def get_val(collection, key, default='git'):
-    pass
+coll = {'word1': 'dog', 'word2': 'cat'}
+def get_val(collection, key, default='fish'):
+    for key_dict, values in coll.items():
+        if key == key_dict:
+            return values
+
+    if key == '':
+        return default
